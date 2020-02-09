@@ -8,6 +8,6 @@ For Linux Users, simply:
 
 `g++ fixmycode.cpp -o fixmycode`
 
-For Windows Users, simply:
+(In Development) For Windows Users, simply:
 
 `g++ fixmycode-win.cpp -o fixmycode.exe`
