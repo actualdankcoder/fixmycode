@@ -11,3 +11,11 @@ For Linux Users, simply:
 (In Development) For Windows Users, simply:
 
 `g++ fixmycode-win.cpp -o fixmycode.exe`
+
+## Usage
+
+Executing the app is the same in all operating systems
+
+`fixmycode filename.py`
+
+This will create a `log.txt` file that contains solutions and information about recent installations
