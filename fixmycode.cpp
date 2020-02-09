@@ -19,13 +19,17 @@ std::string exec(const char* cmd) {
     return result;
 }
 using namespace std;
-int main() {
+int main(int argc, char** argv) {
 	string line;
 	ofstream logs;
 	string lineno;
 	string traceback="	˪-----> ";
 	int i;
-	ifstream codefile("bot.py");
+	if(argc==1){
+		cout << "Please pass the file name, for eg: fixmycode bot.py" << endl;
+		return 0;
+	}
+	ifstream codefile(argv[1]);
 	logs.open("log.txt");
 	if(codefile.is_open()) {
 		logs << "------------------------------------------------------" << "\n\n";
@@ -60,9 +64,6 @@ int main() {
 		logs << "\n" << "------------------------------------------------------" << "\n";
 		codefile.close();
 		logs.close();
-	}
-	else {
-		cout << "Rename your bot's filename to bot.py"<< endl;
 	}
 	return 0;
 }
