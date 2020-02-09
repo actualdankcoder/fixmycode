@@ -30,7 +30,7 @@ int main(int argc, char** argv) {
 	ofstream logs;
 	string lineno;
 	string traceback="	˪-----> ";
-	int i;
+	int i=0;
 	if(argc==1){
 		cout << "Please pass the file name, for eg: fixmycode bot.py" << endl;
 		return 0;
